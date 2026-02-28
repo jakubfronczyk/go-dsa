@@ -2,6 +2,24 @@
 
 A personal study repository for data structures and algorithms implemented in Go. Each solution is written by hand to build genuine understanding of how things work under the hood.
 
+## Testing
+
+Each problem has its own `_test.go` file using Go's built-in testing package. No external dependencies.
+
+```bash
+# Run all tests
+go test ./...
+
+# Run tests for a specific folder
+go test ./arrays/...
+
+# Run a specific test
+go test ./arrays/... -run TestReverse
+
+# Verbose output
+go test ./... -v
+```
+
 ---
 
 ## Array-Based Problems
